@@ -5,6 +5,9 @@ use std::net::TcpListener;
 use std::net::TcpStream;
 
 fn main() {
+    #[cfg(not(debug_assertions))]
+    let listener = TcpListener::bind("[::]:80").unwrap();
+    #[cfg(debug_assertions)]
     let listener = TcpListener::bind("127.0.0.1:8080").unwrap();
     let mut counter = 0;
 
