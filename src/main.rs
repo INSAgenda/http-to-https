@@ -23,7 +23,6 @@ fn main() {
     }
 }
 
-
 fn handle_connection(mut stream: TcpStream) {
     let mut buffer = Vec::with_capacity(1024);
     unsafe { buffer.set_len(1024) };
