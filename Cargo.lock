@@ -3,5 +3,5 @@
 version = 3
 
 [[package]]
-name = "http-redirect"
+name = "http-to-https"
 version = "0.1.0"
